@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+:root{
+    --bg-color:  rgb(6, 137, 147);
+    --black-color:black;
+}
+@font-face {
+    font-family: customfont;
+    src: url("KaushanScript-Regular.otf");
+    font-size: 30px;
+}
+    header{
+        position: relative;
+        padding: 20px;
+        background-color :var(--bg-color);
+        height: 100px;
+    }
+        
+    ul{
+        display: flex; 
+        justify-content: end;
+        gap: 30px;  
+    
+    }
+    ul li{
+        list-style-type: none;
+        position: relative;
+        top: 10px; 
+    }
+    ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 19px;
+        padding: 5px 15px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',serif;
+    }
+    ul li a ::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 100%;
+        height: 3px;
+        background: white;
+        
+    }
+    ul li a:hover{
+        color: rgb(43, 20, 192);
+        text-decoration:underline;
+    }
+    .logo{
+        position: relative;
+        bottom: 56px;
+        left: 20px;
+    }
+    .btn-1{
+        padding:10px 20px;
+        border-radius: 55px;
+        border: none;
+        position: relative;
+        top: 5px;
+    }
+    .btn-1 a{
+        text-decoration: none;
+        color: var(--black-color);
+        font-size: 16px;
+    }
+    .back-img{
+        width: 100%;
+        height: auto;
+        position: relative;
+        bottom: 80px;
+}
+
+
+.hero{
+    background-image: url('../assests/images/bachgroundimg.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-content{
+    position: relative;
+    
+}
+.hero-content #text{
+    font-size: 54px;
+    font-family: customfont;
+    color:var(--black-color);
+    margin-bottom: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid var(--bg-color);
+
+   
+}
+.hero-content p{
+    font-size: 24px;
+    position: relative;
+    left: 100px;
+    font-family: customfont;
+   
+}

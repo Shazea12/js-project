@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <link rel="stylesheet" href="css styles/indexpage_style.css">
+    <title>Tahzeeb Travel</title>
+</head>
+<body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Our Van</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <button class="btn-1"><a href="prac.html">Login</a></button>
+
+
+                </ul>
+            </nav> 
+            <img src="assests\images\Black and White Vintage Camper Van Rental Logo.png" class="logo" width="110px" height="110px">
+
+        </header>
+        <!-- <img src="assests\images\bachgroundimg.jpg" class="back-img"> -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 id="text"></h1>
+                <p>Your Trusted Partner In Transportation Solutions.</br> From pickups to events, and everything in between,</br> trust us for reliable transportation services with our versatile fleet.</p>
+            </div>
+            <!-- <div class="contact-info">
+                <img src="whatsapp-icon.png" alt="WhatsApp">
+                <p>+92 312 2355569</p>
+            </div> -->
+        </section>
+        
+    <script>
+        let txt ='Pick & Drop Service at Door Stop';
+        for(let i=0;i< txt.length; i++){
+            setTimeout(()=>{
+                document.getElementById('text')
+                .innerHTML += txt.charAt(i);
+            },i* 100);
+        }
+    </script>
+       
+</body>
+
+</html>
